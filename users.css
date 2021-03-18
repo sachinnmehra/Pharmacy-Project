@@ -1,0 +1,39 @@
+#search-input {
+  width: 40%;
+  padding: 12px 24px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 2px solid #8c8c8c;
+  margin-left: 5%;
+  outline: none;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+#reset-btn {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  background-color: #20b883;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#userdata {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+th {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+}
+td {
+  background-color: #fff;
+  border-bottom: 4px solid #f6f7fb;
+  padding-left: 25px;
+}

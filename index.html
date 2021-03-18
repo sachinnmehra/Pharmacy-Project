@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafene App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar-container">
+      <div id="left-section">
+        <div id="logo-section">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt=""
+          />
+          <p>Kafene</p>
+        </div>
+        <div id="nav">
+          <a href="#order-heading">Orders</a>
+          <a href="/product.html">Products</a>
+          <a href="/users.html">Users</a>
+        </div>
+      </div>
+      <div id="right-section">
+        <a id="logout">Logout</a>
+      </div>
+    </div>
+
+    <!--Main-section-->
+
+    <main>
+      <h1 id="order-heading" class="homepage-heading">Orders</h1>
+      <div class="homepage-wrapper">
+        <div class="order-wrapper">
+          <div class="homepage-filter-wrapper">
+            <h3>Filters</h3>
+            <div class="homepage-filter-option">
+              <p id="counter">Count: 100</p>
+              <label class="Homepage_FilterCheckbox__2-zv7">
+                <input
+                  id="new"
+                  type="checkbox"
+                  name="orders-new"
+                  checked=""
+                />New</label
+              >
+              <label class="Homepage_FilterCheckbox__2-zv7">
+                <input
+                  id="orderPacked"
+                  type="checkbox"
+                  name="orders-packed"
+                  checked=""
+                />Packed</label
+              >
+              <label class="Homepage_FilterCheckbox__2-zv7">
+                <input
+                  id="transit"
+                  type="checkbox"
+                  name="orders-transit"
+                  checked=""
+                />InTransit</label
+              >
+              <label class="Homepage_FilterCheckbox__2-zv7">
+                <input
+                  id="delivered"
+                  type="checkbox"
+                  name="orders-delivered"
+                  checked=""
+                />Delivered</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="homepage-table-container">
+          <table id="order-table">
+            <tr>
+              <th>ID</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+            <tbody>
+              <tr class="homepage-table-row">
+                <!-- <td id="idc" class="homepage-seconday-text">1</td>
+                <td id="cu" class="homepage-primary-text">2</td>
+                <td id="cu" class="homepage-primary-text">3</td>
+                <td id="cu" class="homepage-seconday-text">4</td>
+                <td id="cu" class="homepage-primary-text">5</td>-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

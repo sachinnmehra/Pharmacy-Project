@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafene App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="users.css" />
+  </head>
+  <body>
+    <div id="navbar-container">
+      <div id="left-section">
+        <div id="logo-section">
+          <img
+            src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+            alt=""
+          />
+          <p>Kafene</p>
+        </div>
+        <div id="nav">
+          <a href="/main.html">Orders</a>
+          <a href="/product.html">Products</a>
+          <a href="">Users</a>
+        </div>
+      </div>
+      <div id="right-section">
+        <a id="logout" href="">Logout</a>
+      </div>
+    </div>
+
+    <main>
+      <div id="user-heading" class="user-container">
+        <h1 id="heading" class="homepage-heading">Users</h1>
+        <br />
+        <input
+          type="search"
+          name="user-search"
+          placeholder="Search By Name"
+          id="search-input"
+        />
+        <button id="reset-btn" type="submit" onclick="clearData()">
+          Reset
+        </button>
+      </div>
+      <div id="userdata" class="usercontainer">
+        <table class="userdata-table">
+          <tr>
+            <th>ID</th>
+            <th>User Avatar</th>
+            <th>Full Name</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Current Location</th>
+          </tr>
+          <tbody>
+            <tr class="homepage-table-row">
+              <!-- <td id="idc" class="homepage-seconday-text">1</td>
+                <td id="cu" class="homepage-primary-text">2</td>
+                <td id="cu" class="homepage-primary-text">3</td>
+                <td id="cu" class="homepage-seconday-text">4</td>
+                <td id="cu" class="homepage-primary-text">5</td>-->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="users.js"></script>
+  </body>
+</html>
