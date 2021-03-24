@@ -14,7 +14,7 @@ if (window.localStorage) {
     e.preventDefault();
     if (user == pass) {
       alert("Login SuccessFull");
-      window.location.replace("../order.html");
+      window.location.replace("../index.html");
       console.log(window.location);
     } else {
       alert("wrong credentials");
